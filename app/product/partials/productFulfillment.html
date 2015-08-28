@@ -17,7 +17,9 @@
     </div>
     <div class="col-xs-12">
         <button type="button" class="btn btn-default btn-spu" ng-if="productDetails.enablePickUp">PICK UP IN STORE</button>
-        <button type="button" class="btn btn-danger btn-atc" ng-if="productDetails.enableAtc">ADD TO CART</button>
+        <button  atc-button qty="qty" img="productDetails.imageDetails.primImg.image"
+                 title="productDetails.title"
+                 ng-if="productDetails.enableAtc">ADD TO CART</button>
     </div>
     <div class="col-xs-12">
         <div class="productWarnings">

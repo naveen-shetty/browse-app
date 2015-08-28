@@ -8,7 +8,7 @@ exports.config =
   files:
     javascripts:
       joinTo:
-        'js/browseApp.js': /^app(\/|\\)(product|common)(\/|\\)/
+        'js/browseApp.js': /^app(\/|\\)(product|common|addtocart)(\/|\\)/
         'js/angular.js': /^vendor(\/|\\)angular(\/|\\)/
         'js/angularExt.js': /^vendor(\/|\\)(angular-animate|angular-bootstrap|angular-resource|angular-route|angular-sanitize|angular-ui-router)(\/|\\)/
       order:
@@ -29,8 +29,7 @@ exports.config =
         ]
     templates:
       joinTo:
-        'js/browseApp.js': /^app(\/|\\)common(\/|\\)/
-        'js/browseApp.js': /^app(\/|\\)product(\/|\\)/
+        'js/browseApp.js': /^app(\/|\\)(product|common|addtocart)(\/|\\)/
   plugins:
     angular_templates:
       module: 'templateCache'

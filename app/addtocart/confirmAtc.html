@@ -1,0 +1,29 @@
+<div class="atc-confirm ">
+    <div class="row">
+        <div class="col-xs-12 col-md-6 pull-right" >
+            <span class="close-atc glyphicon glyphicon-remove" ng-click="$close()"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6 ">
+            <span ng-bind="prd.qty+' item added to cart'"> </span>
+            <a class="view-cart">
+                <span >View your cart</span>
+            </a>
+        </div>
+    </div>
+     <div class="row ">
+        <div  class="cart-image col-xs-12 col-md-12">
+            <img ng-src="{{prd.image}}"
+                 alt="{{prd.title}}"
+                 title="{{prd.title}}"
+                 width="106" height="106">
+        </div>
+        <div class="tile-info col-xs-12 col-md-12">
+            <a title="{{prd.title}}" ng-bind="prd.title"
+               class="productTitle">
+            </a>
+        </div>
+
+    </div>
+</div>

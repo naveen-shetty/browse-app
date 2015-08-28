@@ -2,7 +2,7 @@
  * Created by nshetty on 8/14/2015.
  */
 
-var browseApp = angular.module('browseApp', [  'ui.router' ,'productApp' , 'templateCache' ]);
+var browseApp = angular.module('browseApp', [ 'internalApps' ,'vendorApps' ]);
 
 
 browseApp.run([ '$rootScope', '$state', '$stateParams', '$location',
