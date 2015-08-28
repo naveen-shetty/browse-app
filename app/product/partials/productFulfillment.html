@@ -1,0 +1,46 @@
+<div class="row pdp-ffm">
+    <div class="col-xs-12">
+        <div class="input-group qty-grp" >
+            <span class="input-group-addon">quantity:</span>
+            <span class="input-group-addon" ng-click="qty = productDetails.decrementNonZeroNonNegative(qty) ">
+                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+            </span>
+            <input type="text" class="form-control" aria-label="" name ="product_qty" ng-model="qty" ng-init="qty=1"  >
+            <span class="input-group-addon" ng-click="qty = productDetails.increment(qty) ">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </span>
+
+        </div>
+    </div>
+    <div class="col-xs-12">
+        &nbsp;
+    </div>
+    <div class="col-xs-12">
+        <button type="button" class="btn btn-default btn-spu" ng-if="productDetails.enablePickUp">PICK UP IN STORE</button>
+        <button type="button" class="btn btn-danger btn-atc" ng-if="productDetails.enableAtc">ADD TO CART</button>
+    </div>
+    <div class="col-xs-12">
+        <div class="productWarnings">
+            <div class="warning-label">
+                returns
+            </div>
+            <ul>
+                <li id="extPackage" class="hidden"></li>
+                <li>
+                    <span>This item must be returned within 30 days of ship date. See return policy for details. Prices, promotions, styles and availability may vary by store and online.</span>
+                </li>
+                <li id="retPolicy" class="hidden"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <div class="btn-others">
+            <button class="btn btn-extra btn-atr" type="submit">ADD TO REGISTRY</button>
+
+            <button class="btn btn-extra btn-atl" type="submit">ADD TO LIST</button>
+
+            <button class="btn btn-extra btn-share" type="submit">SHARE</button>
+
+        </div>
+    </div>
+</div>

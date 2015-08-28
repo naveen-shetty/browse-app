@@ -1,0 +1,40 @@
+{
+	"name": "angular-shc",
+	"repo": "angular-shc",
+	"version": "0.0.1",
+    "directory" : "vendor",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"components"
+	],
+	"dependencies": {
+		"angular": "1.2.26",
+		"angular-resource": "1.2.26",
+		"angular-sanitize": "1.2.26",
+		"angular-animate": "1.2.26",
+		"angular-mediator": "0.0.2",
+		"angular-ui-router": "0.2.10",
+		"underscore": "1.5.2",
+		"moment": "2.8.3",
+        "angular-bootstrap" : "0.12.0",
+        "bootstrap-css-only": "3.3.0"
+	},
+	"overrides": {
+		"jquery": {
+			"main": "jquery.js"
+		},
+		"underscore": {
+			"main": "underscore.js"
+		},
+		"zone": {
+			"main": [
+				"zone.js",
+				"long-stack-trace-zone.js"
+			]
+		}
+	},
+	"resolutions": {
+		"angular": "1.2.26"
+	}
+}

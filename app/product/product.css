@@ -1,0 +1,112 @@
+
+ .offer-price {
+    color: #555;
+    font-size: 26px;
+    font-weight: 100;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+ #prod-details-thumbs {
+     position: relative;
+     width: 225px;
+     margin-left: auto;
+     margin-right: auto;
+
+ }
+ #prod-details-thumbs .thumb-cntrls {
+     opacity: 90%;
+     height: 42px;
+     position: absolute;
+     top: 12px;
+ }
+ #prod-details-thumbs .thumb-cntrls span {
+     text-align: center;
+     display: block;
+     cursor: pointer;
+     padding-top: 10px;
+     font-size: 22px;
+ }
+ #prod-details-thumbs .thumb-cntrls.left {
+     left: -5px;
+ }
+ #prod-details-thumbs .thumb-cntrls.right {
+     right: 0
+ }
+ #prod-details-thumbs .thumb-container {
+     height: 69px;
+     width: 211px;
+     margin-left: 10px;
+     overflow: hidden;
+ }
+ #prod-details-thumbs .thumb-container img.thumb {
+     float: left;
+     margin: 7px;
+     border-color: #d0d0d0;
+     border-width: 1px 1px 1px;
+     border-style: solid;
+ }
+ #prod-details-thumbs .thumb-container img.thumb:hover,
+ #prod-details-thumbs .thumb-container img.thumb:focus {
+     border-color: #333;
+ }
+ #prod-details-thumbs .thumb-container img.thumb.selected {
+     border: 2px solid #0670a4;
+ }
+
+ .star-rating{
+     font-weight: 700;
+     font-size: 16px;
+ }
+ .half-star {
+     position:relative;
+ }
+ .half-star:after {
+     content:'';
+     position:absolute;
+     z-index:1;
+     background:white;
+     width: 50%;
+     height: 100%;
+     left: 47%;
+ }
+
+ .rating-star{
+     color: #AC291D;
+     font-size:24px;
+ }
+
+ .pdp .total-reviews{
+     padding-top: 6px;
+     float: right;
+ }
+
+ .pdp .reviews-wrapper{
+     background-color: #f5f5f5;
+ }
+ .pdp .reviews-wrapper h4{
+     padding-bottom: 0;
+     margin-bottom: 0;
+ }
+
+ .pdp .reviews-wrapper hr{
+     border-bottom: 1px solid #d5d5d5
+ }
+
+ .pdp .reviews-wrapper .rating-call-out{
+     font-size: smaller;
+ }
+
+ /*Qty button*/
+ .qty-grp {
+     width: 200px;
+ }
+
+ .qty-grp input {
+     border-left: none;
+     height: auto;
+ }
+
+ .qty-grp .input-group-addon{
+     cursor: pointer;
+ }

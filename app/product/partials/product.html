@@ -1,0 +1,35 @@
+<div class="container pdp">
+    <!-- Row 1 (Product display and product controls section) : Starts -->
+    <div class="row">
+        <!-- Row 1, Col 1 (Product title and image container) : Starts -->
+        <div class="col-xs-12 col-md-6 contentRight primaryImgContainer">
+            <h2 class="product-name item">
+                    <span class="fn" ng-bind="productDetails.title">
+                    </span>
+            </h2>
+            <div ng-include="'app/product/partials/productImage.html'">
+            </div>
+        </div>
+        <!-- Row 1, Col 1 (Product title and image container) : Ends -->
+        <!-- Row 1, Col 2 (Product control section) : Starts -->
+        <div class="col-xs-12 col-md-6 primaryInfo">
+            <div class="row">
+                <div ng-include="'app/product/partials/productOffers.html'">
+                </div>
+                <div class="col-xs-12 atc-contaier" ng-include="'app/product/partials/productFulfillment.html'">
+                </div>
+                <div class="col-xs-12  prod-highlights" ng-include="'app/product/partials/productHighlights.html'">
+
+                </div>
+            </div>
+        </div>
+        <!-- Row 1, Col 2 (Product control section) : Ends -->
+    </div>
+    <!-- Row 1 (Product display and product controls section) : Ends -->
+    <!-- Row 2 (Product review section) : Starts -->
+    <div class="row">
+        <div class="col-xs-12 col-md-6 " ng-include="'app/product/partials/productRatings.html'">
+        </div>
+    </div>
+    <!-- Row 2 (Product review section) : Ends -->
+</div>

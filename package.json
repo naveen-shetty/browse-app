@@ -1,0 +1,29 @@
+{
+	"author": "nshetty",
+	"name": "browse-app",
+	"description": " Web project for Browse app",
+	"version": "0.0.1",
+    "homepage": "",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"engines": {
+		"node": ">= 0.9"
+	},
+	"scripts": {
+	},
+	"dependencies": {
+		"bower": ">= 1.0 < 2.0",
+		"brunch": "1.7.14",
+		"coffee-script": ">= 1.0 < 2.0",
+		"javascript-brunch": ">= 1.0 < 2.0",
+		"coffee-script-brunch": ">= 1.0 < 2.0",
+		"css-brunch": ">= 1.0 < 2.0",
+		"jshint-brunch": ">= 1.0 < 2.0",
+		"clean-css-brunch": ">= 1.0 < 2.0",
+		"ngmin-uglify-js-brunch": ">= 1.0 < 2.0",
+        "angularjs-templates-brunch" : "1.0.0"
+	}
+}
+

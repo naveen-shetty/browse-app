@@ -1,0 +1,30 @@
+<div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="Hero" class="HeroPrimContainer" style="overflow: hidden;">
+                    <a href="javascript:;">
+                        <img align="center" ng-if="productDetails.imageDetails.primImg"
+                             ng-src="{{productDetails.imageDetails.primImg.image}}" alt="">
+                    </a>
+                    <span class="screen-reader-only"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="prod-details-thumbs" ng-if="productDetails.imageDetails.altImgs.length > 1" class="ng-scope">
+                <div class="thumb-cntrls left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"
+                                                     ng-click="productDetails.prevTh()"></span>
+                </div>
+                <div class="thumb-container">
+                    <div ng-repeat="img in productDetails.imageDetails.altImgs" class="ng-scope">
+                        <img class="thumb" ng-class="{selected: productDetails.imageDetails.selectedthInd ==$index }"
+                             ng-click="productDetails.changePrimaryImg( $index)" ng-src="{{img.image}}?hei=50&wid=50">
+                    </div>
+                </div>
+                <div class="thumb-cntrls right"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"
+                                                      ng-click="productDetails.nextTh()"></span></div>
+            </div>
+        </div>
+    </div>
+</div>

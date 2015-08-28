@@ -1,0 +1,24 @@
+<div id="price_main" class="col-xs-12 priceDiv">
+    <div class="offerprice">
+        <span class="price">
+            <span class="offerPrice" ng-bind="productDetails.offerPrice.formattedPriceValue"></span>
+        </span>
+        <span class="price lstPrice">
+            <span class="eyebrow" id="eyebrow" ng-bind="productDetails.offerPrice.priceQualifier"></span>
+        </span>
+    </div>
+</div>
+<div class="col-xs-12">
+    <hr>
+</div>
+<div class="col-xs-12 promo">
+    <div class="RichPromoItem" ng-repeat="promo in productDetails.Promotions">
+        <!-- This should have been parsed in Service layer to avoid the below iteration: Used ng-repeat for ease in this POC-->
+        <div class="promoText" ng-repeat="promoDesc  in promo.Description ">
+            <h3><span ng-bind="promoDesc.shortDescription"></span></h3>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12">
+    <hr>
+</div>

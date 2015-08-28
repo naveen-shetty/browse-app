@@ -1,0 +1,35 @@
+<div class="row star-rating">
+    <div class="col-xs-6 col-md-6 pull-left">
+        <div star-ratings  rating="productDetails.customerReview.consolidatedOverallRating"></div>
+    </div>
+    <div class="col-xs-6 col-md-6 pull-right">
+        <div class="total-reviews">
+                view all <span ng-bind="productDetails.customerReview.totalReviews"></span> reviews
+        </div>
+    </div>
+</div>
+<div class="row  reviews-wrapper">
+    <div class="col-xs-6 col-md-6">
+        <h4>PRO</h4>
+        <span class="rating-call-out">most helpful 4-5 star review</span>
+    </div>
+    <div class="col-xs-6 col-md-6">
+        <h4>CON</h4>
+        <span class="rating-call-out">most helpful 1-2 star review</span>
+    </div>
+    <div class="col-xs-12 col-md-12">
+        <hr>
+    </div>
+    <div class="col-xs-6 col-md-6">
+        <span ng-repeat="pro in productDetails.customerReview.Pro">
+            <span><strong ng-bind="pro.title"> </strong></span>
+            <br> <span ng-bind="pro.review"> </span>
+        </span>
+    </div>
+    <div class="col-xs-6 col-md-6">
+        <span ng-repeat="con in productDetails.customerReview.Con">
+            <span><strong ng-bind="con.title"> </strong></span>
+            <br> <span ng-bind="con.review"> </span>
+        </span>
+    </div>
+</div>
