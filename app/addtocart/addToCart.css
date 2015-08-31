@@ -15,20 +15,6 @@
     cursor: pointer;
 }
 
-/*.atc-confirm .close-atc{
-    background: url("http://2.shard.targetimg2.com/L/G/7ayKxsvN0.png") no-repeat;
-    background-image: url(http://2.shard.targetimg2.com/L/G/7ayKxsvN0.png);
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
-}*/
-
 .atc-confirm .close-atc {
     color: lightgray;
     cursor: pointer;

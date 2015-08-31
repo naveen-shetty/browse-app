@@ -9,7 +9,7 @@ angular.module('productApp')
                 link: function(scope, element, attrs){
                     // whole star = A, empty star = c, half star = B
 
-                    scope.$watch('rating', function() {
+                    scope.$watch('avgRating', function() {
                         scope.show = true; //sets template to show
 
                             if (!scope.avgRating){ //hides template if no product rating or product rating is 0
