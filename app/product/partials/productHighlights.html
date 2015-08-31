@@ -1,6 +1,6 @@
 <span>product highlights</span>
 <div class="features">
-    <ul>
-        <li ng-repeat=" feature in productDetails.features" ng-bind-html="santize(feature)"></li>
+    <ul >
+        <li bindonce ng-repeat=" feature in productDetails.features" bo-html="feature |trustAsHtml"></li>
     </ul>
 </div>

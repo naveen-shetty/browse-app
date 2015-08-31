@@ -27,9 +27,9 @@ addToCart.directive('atcButton', ['$modal' , function($modal) {
                         scope   : scope
                     });
 
-                }
+                };
 
             }
         };
     }]
-)
+);

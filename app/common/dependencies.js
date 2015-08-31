@@ -3,6 +3,6 @@
 angular.module('internalApps', [ 'productApp' ,  'addToCart' ]);
 // external apps
 angular.module('vendorApps', [  'ui.router' ,
-    'templateCache', 'ui.bootstrap' , 'ui.bootstrap.tpls' ]);
+    'templateCache', 'ui.bootstrap' , 'ui.bootstrap.tpls', 'pasvaz.bindonce' ]);
 
 
