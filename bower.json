@@ -1,6 +1,6 @@
 {
-	"name": "angular-shc",
-	"repo": "angular-shc",
+	"name": "browse-app",
+	"repo": "browse-app",
 	"version": "0.0.1",
     "directory" : "vendor",
 	"ignore": [
@@ -15,10 +15,10 @@
 		"angular-animate": "1.2.26",
 		"angular-mediator": "0.0.2",
 		"angular-ui-router": "0.2.10",
+		"angular-bindonce": "0.3.3",
 		"underscore": "1.5.2",
-		"moment": "2.8.3",
-        "angular-bootstrap" : "0.12.0",
-        "bootstrap-css-only": "3.3.0"
+	        "angular-bootstrap" : "0.12.0",
+	        "bootstrap-css-only": "3.3.0"
 	},
 	"overrides": {
 		"jquery": {
@@ -26,12 +26,6 @@
 		},
 		"underscore": {
 			"main": "underscore.js"
-		},
-		"zone": {
-			"main": [
-				"zone.js",
-				"long-stack-trace-zone.js"
-			]
 		}
 	},
 	"resolutions": {
