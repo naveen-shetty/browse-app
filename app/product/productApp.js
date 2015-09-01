@@ -7,7 +7,7 @@ productApp.config(['$stateProvider', '$urlRouterProvider',
 
         $stateProvider.state('pdp', {
             url : '/pdp/:productId',
-            templateUrl : 'app/product/partials/product.html',
+            templateUrl : 'product/partials/product.html',
             controller  : "ProductController"
         });
     }

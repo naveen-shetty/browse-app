@@ -5,6 +5,8 @@ exports.config =
     wrapper: false
   paths:
     public: 'public/browse-app/'
+  conventions:
+    ignored: [/\.min\.js$/ , /ui-bootstrap\.js$/]
   files:
     javascripts:
       joinTo:
@@ -32,6 +34,7 @@ exports.config =
         'js/browseApp.js': /^app(\/|\\)(product|common|addtocart)(\/|\\)/
   plugins:
     angular_templates:
+      path_transform: (path) -> path.replace('app/', '')
       module: 'templateCache'
     uglify:
       mangle: true

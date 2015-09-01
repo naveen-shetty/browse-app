@@ -23,7 +23,7 @@ addToCart.directive('atcButton', ['$modal' , function($modal) {
                     scope.prd = prd;
 
                     var modalInstance = $modal.open({
-                        templateUrl: 'app/addtocart/confirmAtc.html',
+                        templateUrl: 'addtocart/confirmAtc.html',
                         scope   : scope
                     });
 
