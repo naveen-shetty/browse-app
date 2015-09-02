@@ -7,7 +7,7 @@ angular.module('productApp')
                     avgRating: '='
                 },
                 link: function(scope, element, attrs){
-                    // whole star = A, empty star = c, half star = B
+
 
                     scope.$watch('avgRating', function() {
                         scope.show = true; //sets template to show
