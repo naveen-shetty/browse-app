@@ -3,8 +3,8 @@
  */
 
 /*global angular */
-angular.module('productApp').controller("ProductController" , ["$scope"  , "$stateParams"  ,"productService", "$sce",
-    function ($scope  , $stateParams , productService , $sce ) {
+angular.module('productApp').controller("ProductController" , ["$scope"  , "$stateParams"  ,"productService",
+    function ($scope  , $stateParams , productService  ) {
         /**
          * Initializes the scope object
          */
@@ -68,14 +68,7 @@ angular.module('productApp').controller("ProductController" , ["$scope"  , "$sta
 
         //*******************************Private Methods end here*******************************////
         //*****************************scope level methods**************************//
-        /**
-         *
-         * @param htmlInput
-         * @returns sanitized html string
-         */
-        $scope.santize = function(htmlInput){
-            return $sce.trustAsHtml(htmlInput);
-        };
+                        //scope level methods(if any) should be here
         //*****************************scope level methods**************************//
 
         //*****************************Controller execution flow**************************//

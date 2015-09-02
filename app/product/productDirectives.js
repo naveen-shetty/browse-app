@@ -1,8 +1,8 @@
 angular.module('productApp')
-    .directive('starRatings', ['$sce' , function($sce) {
+    .directive('starRatings', [ function() {
             return {
                 restrict: 'EA',
-                template: '<div class="star-rating" ng-show="show" ng-bind-html="ratingHTML"></div>',
+                template: '<div class="star-rating" ng-show="show" ng-bind-html="ratingHTML |trustAsHtml"></div>',
                 scope: {
                     avgRating: '='
                 },
@@ -28,7 +28,7 @@ angular.module('productApp')
                                     ratingHTML = ratingHTML + halfStar;
                                 }
                                 ratingHTML = ratingHTML + " overall";
-                                scope.ratingHTML = $sce.trustAsHtml(ratingHTML);
+                                scope.ratingHTML = ratingHTML;
                             }
                     });
                 }

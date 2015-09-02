@@ -1,6 +1,5 @@
-var addToCart = angular.module('addToCart' ,[]);
-
-addToCart.directive('atcButton', ['$modal' , function($modal) {
+angular.module('addToCart' ,[])
+    .directive('atcButton', ['$modal' , function($modal) {
         return {
             restrict: 'EA',
             replace:true,

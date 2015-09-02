@@ -16,16 +16,12 @@
 		"angular-mediator": "0.0.2",
 		"angular-ui-router": "0.2.10",
 		"angular-bindonce": "0.3.3",
-		"underscore": "1.5.2",
-	        "angular-bootstrap" : "0.12.0",
-	        "bootstrap-css-only": "3.3.0"
+        "angular-bootstrap" : "0.12.0",
+        "bootstrap-css-only": "3.3.0"
 	},
 	"overrides": {
 		"jquery": {
 			"main": "jquery.js"
-		},
-		"underscore": {
-			"main": "underscore.js"
 		}
 	},
 	"resolutions": {

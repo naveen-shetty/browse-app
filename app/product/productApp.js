@@ -1,18 +1,16 @@
 /*global angular */
-var productApp = angular.module('productApp',['ui.router']);
+angular.module('productApp', ['ui.router'])
+    .config(['$stateProvider',
+        function ($stateProvider) {
 
+            $stateProvider.state('pdp', {
+                url: '/pdp/:productId',
+                templateUrl: 'product/partials/product.html',
+                controller: "ProductController"
+            });
+        }
 
-productApp.config(['$stateProvider', '$urlRouterProvider',
-    function($stateProvider, $urlRouterProvider) {
-
-        $stateProvider.state('pdp', {
-            url : '/pdp/:productId',
-            templateUrl : 'product/partials/product.html',
-            controller  : "ProductController"
-        });
-    }
-
-]);
+    ]);
 
 
 

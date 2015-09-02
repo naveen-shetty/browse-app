@@ -10,13 +10,13 @@ exports.config =
   files:
     javascripts:
       joinTo:
-        'js/browseApp.js': /^app(\/|\\)(product|common|addtocart)(\/|\\)/
-        'js/angular.js': /^vendor(\/|\\)angular(\/|\\)/
+        'js/browseApp.js' : /^app/
+        'js/angular.js'   : /^vendor(\/|\\)angular(\/|\\)/
         'js/angularExt.js': /^vendor(\/|\\)(angular-bootstrap|angular-animate|angular-resource|angular-sanitize|angular-ui-router|angular-bindonce)(\/|\\)/
       order:
         before: [
           'app/product/productApp.js'
-          'app/common/app.js'
+          'app/app.js'
         ]
         after: [
 

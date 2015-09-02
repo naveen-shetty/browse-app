@@ -3,8 +3,8 @@
  * global angular
  */
 
-angular.module('productApp').factory("productService" ,["$rootScope" , "$http" , "$sce",
-    function($rootScope , $http , $sce){
+angular.module('productApp').factory("productService" ,["$rootScope" , "$http" ,
+    function($rootScope , $http ){
 
         /************************************************** private methods****************************/
 
@@ -102,7 +102,7 @@ angular.module('productApp').factory("productService" ,["$rootScope" , "$http" ,
             return ((purchasingChannelCode ==="0" || purchasingChannelCode ==="1" ) && isStore);
         };
 
-        appendTransform = function(defaults, transform) {
+        var appendTransform = function(defaults, transform) {
 
             // We can't guarantee that the default transformation is an array
             defaults = angular.isArray(defaults) ? defaults : [defaults];
