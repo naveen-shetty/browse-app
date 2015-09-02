@@ -121,7 +121,7 @@ angular.module('productApp').factory("productService" ,["$rootScope" , "$http" ,
 
 
                 return  $http({
-                            url: '/browse-app/json/item-data.json',
+                            url: 'json/item-data.json',
                             method: 'GET',
                             transformResponse: appendTransform($http.defaults.transformResponse, function(data) {
                                 var productDetails ;
